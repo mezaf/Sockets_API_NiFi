@@ -1,0 +1,1589 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>129fcf8a-016e-1000-eed8-a9459c336545</groupId>
+    <name>server_socket</name>
+    <snippet>
+        <processGroups>
+            <id>e1767186-335b-39c9-0000-000000000000</id>
+            <parentGroupId>d535a3cd-3ab6-3b69-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <comments></comments>
+            <contents>
+                <processGroups>
+                    <id>191360c3-f8e4-3de4-0000-000000000000</id>
+                    <parentGroupId>e1767186-335b-39c9-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>386.0</x>
+                        <y>106.0</y>
+                    </position>
+                    <comments></comments>
+                    <contents>
+                        <connections>
+                            <id>3583cf2b-676c-39f2-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <bends>
+<x>331.0</x>
+<y>239.0</y>
+                            </bends>
+                            <destination>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>0bcdeb12-dcc9-3498-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>connected</selectedRelationships>
+                            <source>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>ade0675a-a1ed-3208-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>4752d968-54b0-3c26-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>3505d506-d2f0-300c-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>5f89e116-dbf9-3af1-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>55c92589-b678-3614-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <bends>
+<x>1653.8650723200308</x>
+<y>218.92875545084598</y>
+                            </bends>
+                            <destination>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>5f89e116-dbf9-3af1-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>text message</selectedRelationships>
+                            <source>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>77712475-6d6a-3c83-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>5a1e6dc9-e866-3ca1-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>b0dc735b-276e-3566-0000-000000000000</id>
+<type>FUNNEL</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>failure</selectedRelationships>
+                            <source>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>3505d506-d2f0-300c-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>7a7d2ed0-f5f8-34db-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>cf7250fe-a204-3ae9-0000-000000000000</id>
+<type>FUNNEL</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>3505d506-d2f0-300c-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>80596894-222c-3947-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <bends>
+<x>749.5692749023438</x>
+<y>237.23841857910156</y>
+                            </bends>
+                            <destination>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>0bcdeb12-dcc9-3498-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>0</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>text message</selectedRelationships>
+                            <source>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>ade0675a-a1ed-3208-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>d5f5a6ff-4404-36f7-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>4d9b77a6-a384-339d-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>0bcdeb12-dcc9-3498-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>f2487b73-f977-3355-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>774d7982-1490-3bf1-0000-000000000000</id>
+<type>FUNNEL</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>4d9b77a6-a384-339d-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>f4a6eee8-dd88-3c63-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>612bb66b-a04c-3891-0000-000000000000</id>
+<type>FUNNEL</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>failure</selectedRelationships>
+                            <source>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>4d9b77a6-a384-339d-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>fd204223-206f-3cf5-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <bends>
+<x>1235.295797417687</x>
+<y>220.69033687174442</y>
+                            </bends>
+                            <destination>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>5f89e116-dbf9-3af1-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>connected</selectedRelationships>
+                            <source>
+<groupId>191360c3-f8e4-3de4-0000-000000000000</groupId>
+<id>77712475-6d6a-3c83-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <controllerServices>
+                            <id>ba2fb304-ad8d-3b2c-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <bundle>
+<artifact>nifi-websocket-services-jetty-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <comments></comments>
+                            <descriptors>
+<entry>
+    <key>input-buffer-size</key>
+    <value>
+        <name>input-buffer-size</name>
+    </value>
+</entry>
+<entry>
+    <key>max-text-message-size</key>
+    <value>
+        <name>max-text-message-size</name>
+    </value>
+</entry>
+<entry>
+    <key>max-binary-message-size</key>
+    <value>
+        <name>max-binary-message-size</name>
+    </value>
+</entry>
+<entry>
+    <key>websocket-uri</key>
+    <value>
+        <name>websocket-uri</name>
+    </value>
+</entry>
+<entry>
+    <key>ssl-context-service</key>
+    <value>
+        <identifiesControllerService>org.apache.nifi.ssl.RestrictedSSLContextService</identifiesControllerService>
+        <name>ssl-context-service</name>
+    </value>
+</entry>
+<entry>
+    <key>connection-timeout</key>
+    <value>
+        <name>connection-timeout</name>
+    </value>
+</entry>
+<entry>
+    <key>session-maintenance-interval</key>
+    <value>
+        <name>session-maintenance-interval</name>
+    </value>
+</entry>
+<entry>
+    <key>user-name</key>
+    <value>
+        <name>user-name</name>
+    </value>
+</entry>
+<entry>
+    <key>user-password</key>
+    <value>
+        <name>user-password</name>
+    </value>
+</entry>
+<entry>
+    <key>authentication-charset</key>
+    <value>
+        <name>authentication-charset</name>
+    </value>
+</entry>
+                            </descriptors>
+                            <name>Socket Client</name>
+                            <persistsState>false</persistsState>
+                            <properties>
+<entry>
+    <key>input-buffer-size</key>
+</entry>
+<entry>
+    <key>max-text-message-size</key>
+</entry>
+<entry>
+    <key>max-binary-message-size</key>
+</entry>
+<entry>
+    <key>websocket-uri</key>
+    <value>ws://localhost:9998/socket_test</value>
+</entry>
+<entry>
+    <key>ssl-context-service</key>
+</entry>
+<entry>
+    <key>connection-timeout</key>
+</entry>
+<entry>
+    <key>session-maintenance-interval</key>
+</entry>
+<entry>
+    <key>user-name</key>
+</entry>
+<entry>
+    <key>user-password</key>
+</entry>
+<entry>
+    <key>authentication-charset</key>
+</entry>
+                            </properties>
+                            <state>ENABLED</state>
+                            <type>org.apache.nifi.websocket.jetty.JettyWebSocketClient</type>
+                        </controllerServices>
+                        <controllerServices>
+                            <id>e16619ed-f3e4-31ac-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <bundle>
+<artifact>nifi-websocket-services-jetty-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <comments></comments>
+                            <descriptors>
+<entry>
+    <key>input-buffer-size</key>
+    <value>
+        <name>input-buffer-size</name>
+    </value>
+</entry>
+<entry>
+    <key>max-text-message-size</key>
+    <value>
+        <name>max-text-message-size</name>
+    </value>
+</entry>
+<entry>
+    <key>max-binary-message-size</key>
+    <value>
+        <name>max-binary-message-size</name>
+    </value>
+</entry>
+<entry>
+    <key>websocket-uri</key>
+    <value>
+        <name>websocket-uri</name>
+    </value>
+</entry>
+<entry>
+    <key>ssl-context-service</key>
+    <value>
+        <identifiesControllerService>org.apache.nifi.ssl.RestrictedSSLContextService</identifiesControllerService>
+        <name>ssl-context-service</name>
+    </value>
+</entry>
+<entry>
+    <key>connection-timeout</key>
+    <value>
+        <name>connection-timeout</name>
+    </value>
+</entry>
+<entry>
+    <key>session-maintenance-interval</key>
+    <value>
+        <name>session-maintenance-interval</name>
+    </value>
+</entry>
+<entry>
+    <key>user-name</key>
+    <value>
+        <name>user-name</name>
+    </value>
+</entry>
+<entry>
+    <key>user-password</key>
+    <value>
+        <name>user-password</name>
+    </value>
+</entry>
+<entry>
+    <key>authentication-charset</key>
+    <value>
+        <name>authentication-charset</name>
+    </value>
+</entry>
+                            </descriptors>
+                            <name>Socket Flask Client</name>
+                            <persistsState>false</persistsState>
+                            <properties>
+<entry>
+    <key>input-buffer-size</key>
+</entry>
+<entry>
+    <key>max-text-message-size</key>
+</entry>
+<entry>
+    <key>max-binary-message-size</key>
+</entry>
+<entry>
+    <key>websocket-uri</key>
+    <value>ws://localhost:8000</value>
+</entry>
+<entry>
+    <key>ssl-context-service</key>
+</entry>
+<entry>
+    <key>connection-timeout</key>
+</entry>
+<entry>
+    <key>session-maintenance-interval</key>
+</entry>
+<entry>
+    <key>user-name</key>
+</entry>
+<entry>
+    <key>user-password</key>
+</entry>
+<entry>
+    <key>authentication-charset</key>
+</entry>
+                            </properties>
+                            <state>ENABLED</state>
+                            <type>org.apache.nifi.websocket.jetty.JettyWebSocketClient</type>
+                        </controllerServices>
+                        <funnels>
+                            <id>612bb66b-a04c-3891-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <position>
+<x>852.5692594851304</x>
+<y>506.0</y>
+                            </position>
+                        </funnels>
+                        <funnels>
+                            <id>774d7982-1490-3bf1-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <position>
+<x>507.0</x>
+<y>692.238424812124</y>
+                            </position>
+                        </funnels>
+                        <funnels>
+                            <id>b0dc735b-276e-3566-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <position>
+<x>1756.8650569028173</x>
+<y>487.6903368717444</y>
+                            </position>
+                        </funnels>
+                        <funnels>
+                            <id>cf7250fe-a204-3ae9-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <position>
+<x>1411.295797417687</x>
+<y>673.9287616838683</y>
+                            </position>
+                        </funnels>
+                        <processors>
+                            <id>0bcdeb12-dcc9-3498-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <position>
+<x>356.0</x>
+<y>275.0</y>
+                            </position>
+                            <bundle>
+<artifact>nifi-update-attribute-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <config>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Delete Attributes Expression</key>
+        <value>
+            <name>Delete Attributes Expression</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Store State</key>
+        <value>
+            <name>Store State</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Stateful Variables Initial Value</key>
+        <value>
+            <name>Stateful Variables Initial Value</name>
+        </value>
+    </entry>
+    <entry>
+        <key>canonical-value-lookup-cache-size</key>
+        <value>
+            <name>canonical-value-lookup-cache-size</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Delete Attributes Expression</key>
+    </entry>
+    <entry>
+        <key>Store State</key>
+        <value>Do not store state</value>
+    </entry>
+    <entry>
+        <key>Stateful Variables Initial Value</key>
+    </entry>
+    <entry>
+        <key>canonical-value-lookup-cache-size</key>
+        <value>100</value>
+    </entry>
+</properties>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>UpdateAttribute</name>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+                        </processors>
+                        <processors>
+                            <id>3505d506-d2f0-300c-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <position>
+<x>1260.295797417687</x>
+<y>446.6903368717444</y>
+                            </position>
+                            <bundle>
+<artifact>nifi-websocket-processors-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <config>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>websocket-session-id</key>
+        <value>
+            <name>websocket-session-id</name>
+        </value>
+    </entry>
+    <entry>
+        <key>websocket-controller-service-id</key>
+        <value>
+            <name>websocket-controller-service-id</name>
+        </value>
+    </entry>
+    <entry>
+        <key>websocket-endpoint-id</key>
+        <value>
+            <name>websocket-endpoint-id</name>
+        </value>
+    </entry>
+    <entry>
+        <key>websocket-message-type</key>
+        <value>
+            <name>websocket-message-type</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>websocket-session-id</key>
+        <value>${websocket.session.id}</value>
+    </entry>
+    <entry>
+        <key>websocket-controller-service-id</key>
+        <value>${websocket.controller.service.id}</value>
+    </entry>
+    <entry>
+        <key>websocket-endpoint-id</key>
+        <value>${websocket.endpoint.id}</value>
+    </entry>
+    <entry>
+        <key>websocket-message-type</key>
+        <value>TEXT</value>
+    </entry>
+</properties>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>PutWebSocket</name>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>failure</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.websocket.PutWebSocket</type>
+                        </processors>
+                        <processors>
+                            <id>4d9b77a6-a384-339d-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <position>
+<x>356.0</x>
+<y>465.0</y>
+                            </position>
+                            <bundle>
+<artifact>nifi-websocket-processors-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <config>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>websocket-session-id</key>
+        <value>
+            <name>websocket-session-id</name>
+        </value>
+    </entry>
+    <entry>
+        <key>websocket-controller-service-id</key>
+        <value>
+            <name>websocket-controller-service-id</name>
+        </value>
+    </entry>
+    <entry>
+        <key>websocket-endpoint-id</key>
+        <value>
+            <name>websocket-endpoint-id</name>
+        </value>
+    </entry>
+    <entry>
+        <key>websocket-message-type</key>
+        <value>
+            <name>websocket-message-type</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>websocket-session-id</key>
+        <value>${websocket.session.id}</value>
+    </entry>
+    <entry>
+        <key>websocket-controller-service-id</key>
+        <value>${websocket.controller.service.id}</value>
+    </entry>
+    <entry>
+        <key>websocket-endpoint-id</key>
+        <value>${websocket.endpoint.id}</value>
+    </entry>
+    <entry>
+        <key>websocket-message-type</key>
+        <value>TEXT</value>
+    </entry>
+</properties>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>PutWebSocket</name>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>failure</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.websocket.PutWebSocket</type>
+                        </processors>
+                        <processors>
+                            <id>5f89e116-dbf9-3af1-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <position>
+<x>1260.295797417687</x>
+<y>256.6903368717444</y>
+                            </position>
+                            <bundle>
+<artifact>nifi-update-attribute-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <config>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Delete Attributes Expression</key>
+        <value>
+            <name>Delete Attributes Expression</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Store State</key>
+        <value>
+            <name>Store State</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Stateful Variables Initial Value</key>
+        <value>
+            <name>Stateful Variables Initial Value</name>
+        </value>
+    </entry>
+    <entry>
+        <key>canonical-value-lookup-cache-size</key>
+        <value>
+            <name>canonical-value-lookup-cache-size</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Delete Attributes Expression</key>
+    </entry>
+    <entry>
+        <key>Store State</key>
+        <value>Do not store state</value>
+    </entry>
+    <entry>
+        <key>Stateful Variables Initial Value</key>
+    </entry>
+    <entry>
+        <key>canonical-value-lookup-cache-size</key>
+        <value>100</value>
+    </entry>
+</properties>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>UpdateAttribute</name>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+                        </processors>
+                        <processors>
+                            <id>77712475-6d6a-3c83-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <position>
+<x>1260.295797417687</x>
+<y>54.69033687174442</y>
+                            </position>
+                            <bundle>
+<artifact>nifi-websocket-processors-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <config>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>websocket-client-controller-service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.websocket.WebSocketClientService</identifiesControllerService>
+            <name>websocket-client-controller-service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>websocket-client-id</key>
+        <value>
+            <name>websocket-client-id</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>websocket-client-controller-service</key>
+        <value>e16619ed-f3e4-31ac-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>websocket-client-id</key>
+        <value>asd123</value>
+    </entry>
+</properties>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>Web Socket</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>binary message</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>connected</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>text message</name>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.websocket.ConnectWebSocket</type>
+                        </processors>
+                        <processors>
+                            <id>ade0675a-a1ed-3208-0000-000000000000</id>
+                            <parentGroupId>191360c3-f8e4-3de4-0000-000000000000</parentGroupId>
+                            <position>
+<x>356.0</x>
+<y>73.0</y>
+                            </position>
+                            <bundle>
+<artifact>nifi-websocket-processors-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <config>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>websocket-client-controller-service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.websocket.WebSocketClientService</identifiesControllerService>
+            <name>websocket-client-controller-service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>websocket-client-id</key>
+        <value>
+            <name>websocket-client-id</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>websocket-client-controller-service</key>
+        <value>ba2fb304-ad8d-3b2c-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>websocket-client-id</key>
+        <value>asd123</value>
+    </entry>
+</properties>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>NiFi socket</name>
+                            <relationships>
+<autoTerminate>true</autoTerminate>
+<name>binary message</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>connected</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>text message</name>
+                            </relationships>
+                            <state>STOPPED</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.websocket.ConnectWebSocket</type>
+                        </processors>
+                    </contents>
+                    <name>As Client</name>
+                    <variables/>
+                </processGroups>
+                <processGroups>
+                    <id>920b0135-d92a-3ecb-0000-000000000000</id>
+                    <parentGroupId>e1767186-335b-39c9-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>881.0</x>
+                        <y>106.0</y>
+                    </position>
+                    <comments></comments>
+                    <contents>
+                        <connections>
+                            <id>0097f239-97fb-3d62-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>e38b4a76-6bf1-3cb2-0000-000000000000</id>
+<type>FUNNEL</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>failure</selectedRelationships>
+                            <source>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>d5519e52-a9ed-3068-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>1efb2d4f-0c50-378f-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>d8c63d7e-aa70-3bf4-0000-000000000000</id>
+<type>FUNNEL</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>0</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>connected</selectedRelationships>
+                            <source>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>60795bdb-f479-3b53-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>328128b3-bf0e-3401-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>e38b4a76-6bf1-3cb2-0000-000000000000</id>
+<type>FUNNEL</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>failure</selectedRelationships>
+                            <source>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>2d1250cb-d344-31aa-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>3ef26fb4-db07-3722-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <bends>
+<x>369.50984199727134</x>
+<y>220.76967330977325</y>
+                            </bends>
+                            <destination>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>2d1250cb-d344-31aa-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>text message</selectedRelationships>
+                            <source>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>60795bdb-f479-3b53-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>b530faac-35bc-3488-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>d5519e52-a9ed-3068-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>2d1250cb-d344-31aa-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>c55a0a22-e6dd-3c8a-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>2d1250cb-d344-31aa-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>binary message</selectedRelationships>
+                            <source>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>60795bdb-f479-3b53-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <connections>
+                            <id>c888e094-3aab-36f1-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                            <destination>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>41554ef5-4170-3760-0000-000000000000</id>
+<type>FUNNEL</type>
+                            </destination>
+                            <flowFileExpiration>0 sec</flowFileExpiration>
+                            <labelIndex>1</labelIndex>
+                            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+                            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+                            <name></name>
+                            <selectedRelationships>success</selectedRelationships>
+                            <source>
+<groupId>920b0135-d92a-3ecb-0000-000000000000</groupId>
+<id>d5519e52-a9ed-3068-0000-000000000000</id>
+<type>PROCESSOR</type>
+                            </source>
+                            <zIndex>0</zIndex>
+                        </connections>
+                        <controllerServices>
+                            <id>7343be7f-aa68-38ae-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <bundle>
+<artifact>nifi-websocket-services-jetty-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <comments></comments>
+                            <descriptors>
+<entry>
+    <key>input-buffer-size</key>
+    <value>
+        <name>input-buffer-size</name>
+    </value>
+</entry>
+<entry>
+    <key>max-text-message-size</key>
+    <value>
+        <name>max-text-message-size</name>
+    </value>
+</entry>
+<entry>
+    <key>max-binary-message-size</key>
+    <value>
+        <name>max-binary-message-size</name>
+    </value>
+</entry>
+<entry>
+    <key>listen-port</key>
+    <value>
+        <name>listen-port</name>
+    </value>
+</entry>
+<entry>
+    <key>ssl-context-service</key>
+    <value>
+        <identifiesControllerService>org.apache.nifi.ssl.RestrictedSSLContextService</identifiesControllerService>
+        <name>ssl-context-service</name>
+    </value>
+</entry>
+<entry>
+    <key>client-authentication</key>
+    <value>
+        <name>client-authentication</name>
+    </value>
+</entry>
+<entry>
+    <key>basic-auth</key>
+    <value>
+        <name>basic-auth</name>
+    </value>
+</entry>
+<entry>
+    <key>auth-path-spec</key>
+    <value>
+        <name>auth-path-spec</name>
+    </value>
+</entry>
+<entry>
+    <key>auth-roles</key>
+    <value>
+        <name>auth-roles</name>
+    </value>
+</entry>
+<entry>
+    <key>login-service</key>
+    <value>
+        <name>login-service</name>
+    </value>
+</entry>
+<entry>
+    <key>users-properties-file</key>
+    <value>
+        <name>users-properties-file</name>
+    </value>
+</entry>
+                            </descriptors>
+                            <name>Server Socket</name>
+                            <persistsState>false</persistsState>
+                            <properties>
+<entry>
+    <key>input-buffer-size</key>
+</entry>
+<entry>
+    <key>max-text-message-size</key>
+</entry>
+<entry>
+    <key>max-binary-message-size</key>
+</entry>
+<entry>
+    <key>listen-port</key>
+    <value>9443</value>
+</entry>
+<entry>
+    <key>ssl-context-service</key>
+</entry>
+<entry>
+    <key>client-authentication</key>
+</entry>
+<entry>
+    <key>basic-auth</key>
+</entry>
+<entry>
+    <key>auth-path-spec</key>
+</entry>
+<entry>
+    <key>auth-roles</key>
+</entry>
+<entry>
+    <key>login-service</key>
+</entry>
+<entry>
+    <key>users-properties-file</key>
+</entry>
+                            </properties>
+                            <state>ENABLED</state>
+                            <type>org.apache.nifi.websocket.jetty.JettyWebSocketServer</type>
+                        </controllerServices>
+                        <funnels>
+                            <id>41554ef5-4170-3760-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <position>
+<x>546.25</x>
+<y>681.0</y>
+                            </position>
+                        </funnels>
+                        <funnels>
+                            <id>d8c63d7e-aa70-3bf4-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <position>
+<x>1027.8511591392053</x>
+<y>118.9520644435474</y>
+                            </position>
+                        </funnels>
+                        <funnels>
+                            <id>e38b4a76-6bf1-3cb2-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <position>
+<x>1010.330810546875</x>
+<y>396.4275207519531</y>
+                            </position>
+                        </funnels>
+                        <processors>
+                            <id>2d1250cb-d344-31aa-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <position>
+<x>393.76968399454273</x>
+<y>262.5393466195465</y>
+                            </position>
+                            <bundle>
+<artifact>nifi-standard-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <config>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>Regular Expression</key>
+        <value>
+            <name>Regular Expression</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Replacement Value</key>
+        <value>
+            <name>Replacement Value</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Character Set</key>
+        <value>
+            <name>Character Set</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Maximum Buffer Size</key>
+        <value>
+            <name>Maximum Buffer Size</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Replacement Strategy</key>
+        <value>
+            <name>Replacement Strategy</name>
+        </value>
+    </entry>
+    <entry>
+        <key>Evaluation Mode</key>
+        <value>
+            <name>Evaluation Mode</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>Regular Expression</key>
+        <value>(?s)(^.*$)</value>
+    </entry>
+    <entry>
+        <key>Replacement Value</key>
+        <value>{"key":"value"}</value>
+    </entry>
+    <entry>
+        <key>Character Set</key>
+        <value>UTF-8</value>
+    </entry>
+    <entry>
+        <key>Maximum Buffer Size</key>
+        <value>1 MB</value>
+    </entry>
+    <entry>
+        <key>Replacement Strategy</key>
+        <value>Regex Replace</value>
+    </entry>
+    <entry>
+        <key>Evaluation Mode</key>
+        <value>Entire text</value>
+    </entry>
+</properties>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>15 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>ReplaceText</name>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>failure</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+                            </relationships>
+                            <state>RUNNING</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.standard.ReplaceText</type>
+                        </processors>
+                        <processors>
+                            <id>60795bdb-f479-3b53-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <position>
+<x>395.25</x>
+<y>49.0</y>
+                            </position>
+                            <bundle>
+<artifact>nifi-websocket-processors-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <config>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>websocket-server-controller-service</key>
+        <value>
+            <identifiesControllerService>org.apache.nifi.websocket.WebSocketServerService</identifiesControllerService>
+            <name>websocket-server-controller-service</name>
+        </value>
+    </entry>
+    <entry>
+        <key>server-url-path</key>
+        <value>
+            <name>server-url-path</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>websocket-server-controller-service</key>
+        <value>7343be7f-aa68-38ae-0000-000000000000</value>
+    </entry>
+    <entry>
+        <key>server-url-path</key>
+        <value>/socket_test</value>
+    </entry>
+</properties>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>ListenWebSocket</name>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>binary message</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>connected</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>text message</name>
+                            </relationships>
+                            <state>RUNNING</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.websocket.ListenWebSocket</type>
+                        </processors>
+                        <processors>
+                            <id>d5519e52-a9ed-3068-0000-000000000000</id>
+                            <parentGroupId>920b0135-d92a-3ecb-0000-000000000000</parentGroupId>
+                            <position>
+<x>395.25</x>
+<y>468.0</y>
+                            </position>
+                            <bundle>
+<artifact>nifi-websocket-processors-nar</artifact>
+<group>org.apache.nifi</group>
+<version>1.9.0</version>
+                            </bundle>
+                            <config>
+<bulletinLevel>WARN</bulletinLevel>
+<comments></comments>
+<concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+<descriptors>
+    <entry>
+        <key>websocket-session-id</key>
+        <value>
+            <name>websocket-session-id</name>
+        </value>
+    </entry>
+    <entry>
+        <key>websocket-controller-service-id</key>
+        <value>
+            <name>websocket-controller-service-id</name>
+        </value>
+    </entry>
+    <entry>
+        <key>websocket-endpoint-id</key>
+        <value>
+            <name>websocket-endpoint-id</name>
+        </value>
+    </entry>
+    <entry>
+        <key>websocket-message-type</key>
+        <value>
+            <name>websocket-message-type</name>
+        </value>
+    </entry>
+</descriptors>
+<executionNode>ALL</executionNode>
+<lossTolerant>false</lossTolerant>
+<penaltyDuration>30 sec</penaltyDuration>
+<properties>
+    <entry>
+        <key>websocket-session-id</key>
+        <value>${websocket.session.id}</value>
+    </entry>
+    <entry>
+        <key>websocket-controller-service-id</key>
+        <value>${websocket.controller.service.id}</value>
+    </entry>
+    <entry>
+        <key>websocket-endpoint-id</key>
+        <value>${websocket.endpoint.id}</value>
+    </entry>
+    <entry>
+        <key>websocket-message-type</key>
+        <value>TEXT</value>
+    </entry>
+</properties>
+<runDurationMillis>0</runDurationMillis>
+<schedulingPeriod>0 sec</schedulingPeriod>
+<schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+<yieldDuration>1 sec</yieldDuration>
+                            </config>
+                            <executionNodeRestricted>false</executionNodeRestricted>
+                            <name>PutWebSocket</name>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>failure</name>
+                            </relationships>
+                            <relationships>
+<autoTerminate>false</autoTerminate>
+<name>success</name>
+                            </relationships>
+                            <state>RUNNING</state>
+                            <style/>
+                            <type>org.apache.nifi.processors.websocket.PutWebSocket</type>
+                        </processors>
+                    </contents>
+                    <name>As Server</name>
+                    <variables/>
+                </processGroups>
+            </contents>
+            <name>Rest API Socket</name>
+            <variables/>
+        </processGroups>
+    </snippet>
+    <timestamp>11/19/2019 20:59:42 UTC</timestamp>
+</template>
